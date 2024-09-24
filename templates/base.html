@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block styles %}{% endblock %}
+    {% block fonts %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <a id="nav-logo" class="nav-link" href="{{ url_for('index') }}"> Peace O'Cake </a>
+        <a class="nav-link" href="{{ url_for('add') }}"> Add a Job </a>
+        <a class="nav-link" href="{{ url_for('lookup') }}"> Look For a Job </a>
+    </nav>
+    {% block main %} {% endblock %}
+</body>
+{% block scripts %}{% endblock %}
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+{% endblock %}
+
+{% block fonts %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400;1,900&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+<main>
+    <h1 id="slogan"> "We don't sell jobs. We sell <span id="highlight">passion</span>." </h1>
+</main>
+{% endblock %}

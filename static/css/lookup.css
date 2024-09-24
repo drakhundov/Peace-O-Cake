@@ -1,0 +1,34 @@
+#search-form {
+    margin-left: 25px;
+}
+
+#search-query {
+    border-radius: 10px;
+    border: none;
+    /* border-style: solid;
+    border-color: indianred; */
+    margin-top: 25px;
+    text-indent: 1%;
+    height: 2rem;
+    width: 70%;
+    font-family: Courier;
+    font-size: 1.15em;
+}
+
+#search-submit {
+    border-radius: 10px;
+    border: none;
+    /* border-style: solid;
+    border-color: indianred; */
+    height: 2rem;
+    background-color: indianred;
+    font-family: Courier;
+}
+
+a {
+    text-decoration: none;
+}
+
+.result-container {
+    margin-bottom: 10px;
+}

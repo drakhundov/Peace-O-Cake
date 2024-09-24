@@ -1,0 +1,56 @@
+body {
+    width: 100vw;
+}
+
+.centered_form {
+    display: block;
+    margin: auto;
+    width: 30%;
+    margin-top: 25vh;
+}
+
+.centered_form > * {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    text-indent: 5%;
+    width: 100%;
+}
+
+label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    width: 100%;
+    color: coral;
+    background-color: papayawhip;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.one-line-input {
+    border: 1px gold solid;
+    height: 60px;
+    font-size: 1.5em;
+    font-family: 'Cascadia Code';
+}
+
+.long-input {
+    border: 1px darkorange solid;
+    height: 50px;
+    /* default font - monospace 1.5em */
+}

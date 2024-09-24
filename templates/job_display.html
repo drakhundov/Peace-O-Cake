@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/job_display.css') }}">
+{% endblock %}
+
+{% block fonts %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+    <div id="job-container">
+        <div id="job-title"> {{ title }}  (<span id="job-salary"> {{ salary }}$ </span>) </div>
+        <div id="company"> {{ company }} </div>
+        <div id="job-description"> {{ description }} </div>
+    </div>
+{% endblock %}

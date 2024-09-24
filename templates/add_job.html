@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Add Job {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/add_job.css') }}">
+{% endblock %}
+
+{% block main %}
+<form action="{{ url_for('add') }}" method="POST" class="centered_form">
+    <input class="one-line-input" name="job_title" type="text" placeholder="Job Title">
+    <input class="one-line-input" name="company" type="text" placeholder="Company">
+    <input class="one-line-input" name="salary" type="number" placeholder="Salary">
+
+    <label for="job_desc"> Description </label>
+    <textarea class="long-input" id="job_desc" name="job_desc" oninput="auto_height(this, 50)"></textarea>
+
+    <button class="round-button" type="submit"> Add </button>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

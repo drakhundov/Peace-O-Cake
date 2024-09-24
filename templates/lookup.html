@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Look Up {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/lookup.css') }}">
+{% endblock %}
+
+{% block main %}
+<form id="search-form" action="/lookup" method="POST">
+    <input id="search-query" name="query" type="text" placeholder="Enter job title, company, etc.">
+    <button id="search-submit" type="submit"> Search </button>
+</form>
+
+<ul id="result">
+    {% for job in jobs_found %}
+        <!-- TODO: create a div, containing some information about the job, which is also a link to the job's page -->
+        <a href="{{ url_for('job', job_id=job.id) }}">
+            <div class="result-container round-button">
+                {{ job.title }} <b> ({{ job.salary }}$) </b> -- {{ job.company }}<br>
+                <i style="font-family: Courier;
+                          font-style: italic;
+                          font-size: 0.7em;
+                          margin-left: 2%;
+                          color: rgb(49, 48, 48)">
+                    {{ job.description }}
+                </i>
+            </div>
+        </a>
+    {% endfor %}
+</ul>
+{% endblock %}

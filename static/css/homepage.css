@@ -1,0 +1,9 @@
+#slogan {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display';
+    font-size: 2em;
+}

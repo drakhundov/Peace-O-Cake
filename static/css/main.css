@@ -1,0 +1,51 @@
+body {
+    background-color: lightcyan;
+}
+
+:root {
+    --nav-links-border: 1px solid coral;
+}
+
+a {
+    color: black;
+}
+
+.nav-link {
+    border: var(--nav-links-border);
+    border-right: none;
+    text-decoration: none;
+    padding: 4px;
+    background-color: blanchedalmond;
+    font-family: Courier, Helvetica, Arial;
+}
+
+#nav-logo {
+    background-color: rgb(236, 131, 90);
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+
+nav .nav-link:last-child {
+    border-right: var(--nav-links-border);
+}
+
+.round-button {
+    background-color: lightsalmon;
+    border: none;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.round-button:hover {
+    background-color: rgb(222, 70, 70);
+}
+
+#highlight {
+    color:rgb(217, 106, 55);
+    font-weight: bold;
+    font-family: 'Helvetica';
+}

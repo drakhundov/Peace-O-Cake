@@ -1,0 +1,37 @@
+#job-container {
+    width: 100vw;
+    height: 20vh;
+    margin-top: 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#job-title {
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'American Typewriter';
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#job-salary {
+    font-family: Georgia;
+}
+
+#company {
+    text-indent: 5%;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Andale Mono';
+    background-color: rgb(193, 243, 143);
+    color: rgb(40, 39, 39);
+}
+
+#job-description {
+    text-indent: 7%;
+    font-size: 1.4em;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+}
